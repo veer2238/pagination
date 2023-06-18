@@ -1,0 +1,79 @@
+@import "../../../../css-config/mixins.scss";
+
+.shop-by-category{
+    margin: 10px 0;
+    
+    @include md{
+        margin:  20px 0;
+        padding: 0px 0px 0px 10px;
+    }
+
+    .headv{
+       gap: 10px;
+       
+       
+      
+        
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        h3{
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(0,0,0,0.8);
+            @include md{
+                font-size: 38px;
+            }
+
+        }
+
+        svg{
+            font-size: 18px;
+            color: green;
+            @include md{
+                font-size: 38px;
+            }
+        }
+       
+       
+      
+        
+    }
+    .categories{
+        display: flex;
+        flex-flow: wrap;
+        padding:0 10px;
+        gap: 10px;
+        margin: 10px 0;
+        @include md{
+            margin: 20px 0;
+        }
+        
+        .category{
+            background-color: black;
+            width: calc(50% - 5px);
+            overflow: hidden;
+            cursor: pointer;
+            @include md{
+                width: calc(25% - 10px);
+                // margin: 1px 0;
+               
+            }
+            img{
+                width: 100%;
+                display: block;
+                transition: all ease 0.3s;
+
+            }
+
+            &:hover{
+                img{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
